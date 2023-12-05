@@ -1,0 +1,17 @@
+{
+    "name": "TC-Dual-Motors",
+    "version": "1.0.0",
+    "description": "Makecode block for Dual Motor drives",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "dual_motor.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true
+}
