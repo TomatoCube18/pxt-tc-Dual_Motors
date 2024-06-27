@@ -53,6 +53,8 @@ namespace tomatoCube {
       }
     }
 
+    basic.pause(50)
+    
     if (motor === TC_DualMotor.B || motor === TC_DualMotor.All) {
       const isClockwise = speed * motorRotations[TC_DualMotor.A] > 0;
       pins.digitalWritePin(isClockwise ? DigitalPin.P15: DigitalPin.P16, 0);
