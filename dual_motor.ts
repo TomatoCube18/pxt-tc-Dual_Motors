@@ -56,7 +56,7 @@ namespace tomatoCube {
     basic.pause(50)
     
     if (motor === TC_DualMotor.B || motor === TC_DualMotor.All) {
-      const isClockwise = speed * motorRotations[TC_DualMotor.A] > 0;
+      const isClockwise = speed * motorRotations[TC_DualMotor.B] > 0;
       pins.digitalWritePin(isClockwise ? DigitalPin.P15: DigitalPin.P16, 0);
       if (speed === 100) {
         // Avoid PWM whenever possible as only 3 concurrent PWM outputs are available on the microbit
